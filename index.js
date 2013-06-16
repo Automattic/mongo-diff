@@ -107,33 +107,28 @@ diff.ordered_set = function(a, b){
   var ops = [];
   var lastIndex;
 
-  for (var i = 0, l = b.length; i < l; i++) {
-    var v = b[i];
-
-    // find item of b in a
-    var index = indexOf(a, v);
-
-    // if an element is b exists in a but is not contiguous
-    // considering the last element found, we abort.
-    // for example [1,2,3,4,5] [2,5,4] violates ordering
-    if (index < lastIndex) {
-      throw new Error('Order violation');
-    }
-
-    // check if there are missing items in b and express
-    // them as $pull operations
+  // go through all the items in `a`
+  // to populate pull operations
+  for (var i = 0, v, l = a.length; i < l; i++) {
+    v =  a[i];
+    var index = indexOf(b, v);
     if (index > -1) {
-      for (var ii = lastIndex || 0; ii < index; ii++) {
-        ops.push(['pull', a[ii]]);
+      if (lastIndex && index < lastIndex) {
+        throw new Error('Order exception (' + v + ')');
       }
+      lastIndex = index;
+    } else {
+      ops.push(['pull', v]);
     }
+  }
 
-    // if not found this is a push
-    if (-1 == index) {
-      ops.push(['push', b[i]]);
-    }
-
-    lastIndex = index;
+  // go through all the items in `b`
+  // to populate push operations
+  for (var i = 0, v, l = b.length; i < l; i++) {
+    v = b[i];
+    var index = indexOf(a, v);
+    if (index > -1) continue;
+    ops.push(['push', v]);
   }
 
   return ops;
