@@ -59,6 +59,8 @@ function diff(a, b, opts){
  */
 
 diff.val = function(a, b){
+  if (eql(a,b)) return [];
+
   if (null == b) {
     return [['unset', 1]];
   }
