@@ -1,0 +1,13 @@
+{
+  "name": "mongo-diff",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "debug": "*",
+    "mongo-eql": "git+ssh://git@github.com:LearnBoost/mongo-eql.git#0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  }
+}
