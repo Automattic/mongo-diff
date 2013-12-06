@@ -5,7 +5,7 @@
   "dependencies": {
     "debug": "*",
     "type-component": "*",
-    "mongo-eql": "git+ssh://git@github.com:LearnBoost/mongo-eql.git#0.0.1"
+    "mongo-eql": "0.0.1"
   },
   "devDependencies": {
     "mocha": "*",
