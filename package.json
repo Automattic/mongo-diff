@@ -4,12 +4,15 @@
   "description": "",
   "dependencies": {
     "debug": "*",
-    "type-component": "*",
-    "mongo-eql": "0.1.1"
+    "type-component": "0.0.1",
+    "mongo-eql": "cloudup/mongo-eql#0.1.2"
   },
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*"
+  },
+  "browser": {
+    "type": "type-component"
   },
   "component": {
     "scripts": {
