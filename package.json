@@ -14,10 +14,5 @@
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*"
-  },
-  "component": {
-    "scripts": {
-      "mongo-diff/index.js": "index.js"
-    }
   }
 }
