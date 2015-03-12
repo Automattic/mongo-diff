@@ -1,7 +1,7 @@
 {
   "name": "mongo-diff",
   "version": "0.1.1",
-  "description": "",
+  "description": "Perform a diff between two objects expressed as MongoDB operations",
   "dependencies": {
     "debug": "*",
     "type-component": "0.0.1",
