@@ -9,7 +9,7 @@
   "dependencies": {
     "debug": "*",
     "component-type": "1.1.0",
-    "mongo-eql": "cloudup/mongo-eql#0.1.2"
+    "mongo-eql": "1.0.0"
   },
   "devDependencies": {
     "mocha": "*",
