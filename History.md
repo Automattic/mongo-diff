@@ -1,4 +1,13 @@
 
+1.0.0 / 2015-03-12
+==================
+
+  * use "component-type", better browserify support
+  * package: update "mongo-eql" to v1.0.0
+  * package: remove "component" field
+  * package: add "repository" field
+  * package: add "description" field
+
 0.1.1 / 2014-08-22
 ==================
 

@@ -1,6 +1,6 @@
 {
   "name": "mongo-diff",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Perform a diff between two objects expressed as MongoDB operations",
   "repository": {
     "type": "git",
