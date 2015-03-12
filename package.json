@@ -2,6 +2,10 @@
   "name": "mongo-diff",
   "version": "0.1.1",
   "description": "Perform a diff between two objects expressed as MongoDB operations",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloudup/mongo-diff.git"
+  },
   "dependencies": {
     "debug": "*",
     "type-component": "0.0.1",
