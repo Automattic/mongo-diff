@@ -8,15 +8,12 @@
   },
   "dependencies": {
     "debug": "*",
-    "type-component": "0.0.1",
+    "component-type": "1.1.0",
     "mongo-eql": "cloudup/mongo-eql#0.1.2"
   },
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*"
-  },
-  "browser": {
-    "type": "type-component"
   },
   "component": {
     "scripts": {

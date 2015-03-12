@@ -3,15 +3,8 @@
  * Module dependencies.
  */
 
-var type;
 var eql = require('mongo-eql');
-
-try {
-  type = require('type');
-} catch(e){
-  type = require('type-component');
-}
-
+var type = require('component-type');
 var debug = require('debug')('mongo-diff');
 
 /**
